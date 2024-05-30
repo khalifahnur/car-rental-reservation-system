@@ -28,9 +28,13 @@ yarn-error.log*
 # local env files
 .env*.local
 
+src/lib/firebase/car-rental-system-ddb8a-firebase-adminsdk-f6jf6-94fc1d7b51.json
+
+
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
