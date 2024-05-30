@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Car Hub
 
-First, run the development server:
+Car Hub is a Car Rental Reservation System that is a modern web application built with Next.js 14 and Tailwind CSS, leveraging Redux Toolkit for state management. It integrates Firebase SDK for authentication and Firestore for real-time database functionality. Mapbox is utilized for location services, enhancing the user experience. Context API is employed for efficient state management and data sharing across components.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This system allows users to browse and search for available vehicles by location, date, and type, facilitating seamless reservation bookings. Users can securely sign in, manage their profiles, and receive notifications for booking confirmations and updates. With intuitive UI/UX design and responsive layout, the Car Rental Reservation System provides a user-friendly experience for both desktop and mobile users.
+
+## ScreenShots
+<img src="https://imgur.com/9k9GgQu" alt="Home page" width="400">
+<img src="https://imgur.com/biXQ6xo" alt="Search page" width="400">
+<img src="https://imgur.com/a/vjqxbAU" alt="Rated page" width="400">
+
+## Firebase Setup
+
+### Creating a Firebase Account
+
+1. Go to the [Firebase Console](https://console.firebase.google.com/) and sign in with your Google account.
+2. Click on "Add Project" and follow the prompts to create a new Firebase project.
+3. Once the project is created, you'll be redirected to the project dashboard.
+
+### Configuring Admin SDK
+
+1. In the Firebase Console, navigate to "Project settings" (gear icon) > "Service accounts" tab.
+2. Click on "Generate new private key" to download a JSON file containing your service account credentials.
+3. Rename the downloaded JSON file to `serviceAccountKey.json`.
+4. Place `serviceAccountKey.json` in the root directory of your project.
+
+### Configuring Client SDK
+
+1. In the Firebase Console, navigate to "Project settings" (gear icon) > "General" tab.
+2. Under "Your apps", click on the web icon (`</>`) to add a new web app.
+3. Follow the setup instructions to register your app and obtain your Firebase configuration settings.
+
+## Setting Up Environment Variables
+
+1. Create a new file named `.env` in the root directory of your project.
+2. Add the following variables to `.env`:
+
+```plaintext
+# Firebase Admin SDK Configuration
+FIREBASE_TYPE=service_account
+FIREBASE_PROJECT_ID=your-project-id
+FIREBASE_PRIVATE_KEY_ID=your-private-key-id
+FIREBASE_PRIVATE_KEY=your-private-key
+FIREBASE_CLIENT_EMAIL=your-client-email
+FIREBASE_CLIENT_ID=your-client-id
+FIREBASE_AUTH_URI=https://accounts.google.com/o/oauth2/auth
+FIREBASE_TOKEN_URI=https://oauth2.googleapis.com/token
+FIREBASE_AUTH_PROVIDER_X509_CERT_URL=https://www.googleapis.com/oauth2/v1/certs
+FIREBASE_CLIENT_X509_CERT_URL=https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk.json
+
+# Firebase Web SDK Configuration
+REACT_APP_FIREBASE_API_KEY=your-api-key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your-auth-domain
+REACT_APP_FIREBASE_PROJECT_ID=your-project-id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+REACT_APP_FIREBASE_APP_ID=your-app-id
+REACT_APP_FIREBASE_MEASUREMENT_ID=your-measurement-id
+
+# Dependencies
+
+To run the Car Rental Reservation System, ensure you have the following dependencies installed:
+
+- Nextjs 14
+- Tailwind CSS
+- Firebase
+- Bcrypt
+- Dotenv
+- Redux Toolkit
+- Daisy UI
+- Framer Motion
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Step 3: Install Dependencies
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+To install all the dependencies, run the following command in the terminal:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm install
+```
+### Step 4: Start the Server
 
-## Learn More
+Run the following command in the terminal to start the server:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm start
+```
+### Step 5: Open the Application
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open your preferred web browser and go to the following link:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[http://localhost:3000](http://localhost:3000)
 
-## Deploy on Vercel
+This will open the Car Rental Reservation System in your browser, allowing you to interact with the application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Contributors
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Khalif Noor
