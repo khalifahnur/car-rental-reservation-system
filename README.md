@@ -57,7 +57,7 @@ REACT_APP_FIREBASE_STORAGE_BUCKET=your-storage-bucket
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
 REACT_APP_FIREBASE_APP_ID=your-app-id
 REACT_APP_FIREBASE_MEASUREMENT_ID=your-measurement-id
-
+```
 # Dependencies
 
 To run the Car Rental Reservation System, ensure you have the following dependencies installed:
@@ -70,7 +70,7 @@ To run the Car Rental Reservation System, ensure you have the following dependen
 - Redux Toolkit
 - Daisy UI
 - Framer Motion
-```
+
 
 ### Step 3: Install Dependencies
 
