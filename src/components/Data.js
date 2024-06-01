@@ -9,7 +9,7 @@ const cars = [
         { id: 103, name: "Toyota Tx", imgUrl: "/cars/toyota/tx prado black.jpeg", price: 1000,year:2021,rate:4.4},
         { id: 104, name: "Toyota Tx (new)", imgUrl: "/cars/toyota/tx prado.jpeg", price: 1000,year:2024,rate:4.5 },
         { id: 105, name: "Toyota Camry", imgUrl: "/cars/toyota/camry.jpg", price: 900,year:2022,rate:4.6 },
-        { id: 106, name: "Toyota Hilux", imgUrl: "/cars/toyota/hilux.jpg", price: 700,year:2021,rate:4.7 },
+        { id: 106, name: "Toyota Hilux", imgUrl: "/cars/toyota/hilux.jpg", price: 800,year:2021,rate:4.7 },
         { id: 107, name: "Toyota Hycross", imgUrl: "/cars/toyota/Hycross.jpg", price: 800,year:2023,rate:4.7 },
         { id: 108, name: "Toyota Fotuner", imgUrl: "/cars/toyota/fortuner.jpg", price: 1000,year:2021,rate:4.7 },
         { id: 109, name: "Toyota Vellfire", imgUrl: "/cars/toyota/vellfire.jpg", price: 1000,year:2023,rate:4.7 },

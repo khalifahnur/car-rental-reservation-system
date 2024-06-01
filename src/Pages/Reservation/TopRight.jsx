@@ -59,9 +59,20 @@ const TopRight = () => {
   };
 
   const auth = firebaseAuth;
+
   const postBookings = async () => {
     const BookingsId = uuidv4();
-    const userID = auth.currentUser.uid;
+    const userID = auth.currentUser?.uid;
+
+    // if user not uid/objects not found redirect to the login page
+    // also redirect the user after successfully login to the previous page
+
+    if (!userID) {
+      const returnUrl = encodeURIComponent(router.asPath);
+      router.push(`/signin?returnUrl=${returnUrl}`);
+      return;
+    }
+
     const { id, name, year, } = bookingDetails;
 
     try {
