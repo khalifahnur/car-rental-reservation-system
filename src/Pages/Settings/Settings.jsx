@@ -30,7 +30,6 @@ const Settings = () => {
       }
     });
 
-    // Cleanup function to unsubscribe from listener on unmount
     return unsubscribe;
   }, [auth]);
 
