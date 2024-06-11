@@ -4,37 +4,45 @@
   </a>
 </h1>
 
+<div align='center'>
+    Car Rental Reservation System
+</div>
+
 
 <details open="open">
-<summary>Table of Contents</summary>
-- [About](#about)
-- [Dependencies](#dependencies)
-- [Getting Started](#getting-started)
-  - [Firebase Setup](#firebase setup)
-  - [Usage](#usage)
-    - [Install Dependencies](#install dependencies)
-    - [Start the Server](#start the server)
-    - [Open the Application](#open the application)
-- [Contributing](#contributing)
-- [Contributors](#contributors)
+  <summary>Table of Contents</summary>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#screenshots">Screenshots</a></li>
+    <li><a href="#dependencies">Dependencies</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <ul>
+      <li><a href="#firebase-setup">Firebase Setup</a></li>
+      <li><a href="#usage">Usage</a></li>
+      <ul>
+        <li><a href="#step-1-install-dependencies">Install Dependencies</a></li>
+        <li><a href="#step-2-start-the-server">Start the Server</a></li>
+        <li><a href="#step-3-open-the-application">Open the Application</a></li>
+      </ul>
+    </ul>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contributors">Contributors</a></li>
+  </ul>
 </details>
 
 ---
 
 ## ScreenShots
 <a href="https://github.com/khalifahnur/car-rental-reservation-system">
-    <img src="./public/assets/home.jpg" alt="Home page" width="400" height="400">
+    <img src="./public/assets/home.jpg" alt="Home page" width="200" height="150">
 </a>
 <a href="https://github.com/khalifahnur/car-rental-reservation-system">
-    <img src="./public/assets/home2.jpg" alt="Search page" width="400" height="400">
+    <img src="./public/assets/home2.jpg" alt="Search page" width="200" height="150">
 </a>
 <a href="https://github.com/khalifahnur/car-rental-reservation-system">
-  <img src="./public/assets/filter.jpg" alt="Rated page" width="400" height="400">
+  <img src="./public/assets/filter.jpg" alt="Rated page" width="200" height="150">
 </a>
 
-<img src="https://imgur.com/9k9GgQu" alt="Home page" width="400" height="400">
-<img src="https://imgur.com/biXQ6xo" alt="Search page" width="400" height="400">
-<img src="https://imgur.com/a/vjqxbAU" alt="Rated page" width="400" height="400">
 
 ## About
 Car Hub is a Car Rental Reservation System that is a modern web application built with Next.js 14 and Tailwind CSS, leveraging Redux Toolkit for state management. It integrates Firebase SDK for authentication and Firestore for real-time database functionality. Mapbox is utilized for location services, enhancing the user experience. Context API is employed for efficient state management and data sharing across components.
@@ -56,26 +64,26 @@ To run the Car Rental Reservation System, ensure you have the following dependen
 ## Getting Started
 ## Firebase Setup
 
-# Creating a Firebase Account
+### Creating a Firebase Account
 
 1. Go to the [Firebase Console](https://console.firebase.google.com/) and sign in with your Google account.
 2. Click on "Add Project" and follow the prompts to create a new Firebase project.
 3. Once the project is created, you'll be redirected to the project dashboard.
 
-# Configuring Admin SDK
+### Configuring Admin SDK
 
 1. In the Firebase Console, navigate to "Project settings" (gear icon) > "Service accounts" tab.
 2. Click on "Generate new private key" to download a JSON file containing your service account credentials.
 3. Rename the downloaded JSON file to `serviceAccountKey.json`.
 4. Place `serviceAccountKey.json` in the root directory of your project.
 
-# Configuring Client SDK
+### Configuring Client SDK
 
 1. In the Firebase Console, navigate to "Project settings" (gear icon) > "General" tab.
 2. Under "Your apps", click on the web icon (`</>`) to add a new web app.
 3. Follow the setup instructions to register your app and obtain your Firebase configuration settings.
 
-# Setting Up Environment Variables
+### Setting Up Environment Variables
 
 1. Create a new file named `.env` in the root directory of your project.
 2. Add the following variables to `.env`:
@@ -103,7 +111,7 @@ REACT_APP_FIREBASE_APP_ID=your-app-id
 REACT_APP_FIREBASE_MEASUREMENT_ID=your-measurement-id
 ```
 
-### Usage
+# Usage
 
 ## Step 1: Install Dependencies
 
@@ -140,6 +148,6 @@ Please try to create bug reports that are:
 
 Please adhere to this project's [code of conduct](docs/CODE_OF_CONDUCT.md).
 
-### Contributors
+## Contributors
 
 - Khalif Noor
